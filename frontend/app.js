@@ -8,6 +8,13 @@ const dexDialog = $('pokedex-dialog');
 let dexRequest;
 const artwork = id => `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
 const text = (tag, value, className) => { const el = document.createElement(tag); el.textContent = value; if (className) el.className = className; return el; };
+async function apiData(response) {
+  // A hosting 404 may be an HTML page, rather than our backend's JSON error.
+  if (!response.headers.get('content-type')?.includes('application/json')) {
+    throw new Error('API에 연결하지 못했습니다. 배포 설정과 /api 경로를 확인해 주세요.');
+  }
+  return response.json();
+}
 if (window.L) {
   map = L.map('map', { scrollWheelZoom: false }).setView([36.2, 127.8], 7);
   const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>', maxZoom: 18 }).addTo(map);
@@ -104,7 +111,7 @@ async function openPokedex(id) {
     let data = dexCache.get(id);
     if (!data) {
       const response = await fetch(`/api/pokemon/${id}`, { signal: AbortSignal.any([controller.signal, AbortSignal.timeout(35000)]) });
-      data = await response.json();
+      data = await apiData(response);
       if (response.status === 404 && data.error === '페이지를 찾지 못했습니다.') throw new Error('이전 버전의 서버가 실행 중입니다. 서버 터미널에서 Ctrl+C를 누른 뒤 npm start로 다시 실행해 주세요.');
       if (!response.ok) throw new Error(data.error || '도감 정보를 가져오지 못했습니다.');
       if (data.evolution?.available) dexCache.set(id, data);
@@ -183,7 +190,7 @@ form.addEventListener('submit', async event => {
     const params = new URLSearchParams({ region: $('region').value.trim(), habitat: $('habitat').value });
     if (focusPokemon) params.set('pokemon', String(focusPokemon));
     const response = await fetch(`/api/encounters?${params}`, { signal: AbortSignal.timeout(25000) });
-    const data = await response.json();
+    const data = await apiData(response);
     if (!response.ok) throw new Error(data.error || '검색에 실패했습니다.');
     render(data); $('status').textContent = `${data.location.name}에서 ${data.pokemon.length}종을 추천했어요. 적합도는 게임 규칙 점수이며 실제 출현 확률이 아닙니다.`;
     if (focusPokemon) selectPokemon(focusPokemon);
@@ -197,7 +204,7 @@ async function loadPokemonNames() {
   try {
     const response = await fetch('/api/pokemon-catalog');
     if (!response.ok) return;
-    const catalog = await response.json();
+    const catalog = await apiData(response);
     catalog.forEach(p => { const option = document.createElement('option'); option.value = p.name; $('pokemon-names').append(option); });
     $('reverse-help').textContent = `현재 ${catalog.length}종의 생태 데이터로 국내 명소를 추천합니다. 이름 목록에서 선택할 수 있어요. 실제 출현 정보는 아닙니다.`;
   } catch { /* The form can still search without autocomplete. */ }
@@ -233,7 +240,7 @@ $('pokemon-search-form').addEventListener('submit', async event => {
   try {
     const params = new URLSearchParams({ name: $('pokemon-name').value.trim() });
     const response = await fetch(`/api/destinations?${params}`, { signal: AbortSignal.timeout(10000) });
-    const data = await response.json();
+    const data = await apiData(response);
     if (!response.ok) throw new Error(data.error || '장소를 찾지 못했습니다.');
     renderDestinations(data);
     $('reverse-status').textContent = `${data.pokemon.name}에게 어울리는 명소 ${data.locations.length}곳을 찾았어요. 장소를 누르면 현재 날씨와 지도를 확인할 수 있습니다.`;

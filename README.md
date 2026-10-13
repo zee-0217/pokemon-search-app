@@ -50,6 +50,19 @@ node backend/server.js
 
 이때 http://localhost:3001 을 엽니다. 서버는 로컬 컴퓨터의 `127.0.0.1`에서만 수신합니다.
 
+## Vercel 배포
+
+로컬 서버와 Vercel 배포를 모두 지원합니다. Vercel에서는 프론트엔드를 정적으로 제공하고, 루트 `api/index.js`가 기존 백엔드의 요청 처리기를 함수로 실행합니다. `npm start`로 서버를 상시 실행하는 방식이 아닙니다.
+
+1. Vercel에서 이 GitHub 저장소를 연결합니다. 이미 연결했다면 최신 `main` 커밋으로 재배포합니다.
+2. **Root Directory는 저장소 루트**로 지정합니다. `frontend` 또는 `backend`를 선택하지 마세요. 루트에 `vercel.json`과 `api/`가 있어야 합니다.
+3. 배포 설정은 `vercel.json`에서 지정합니다: **Framework Preset: Other**, **Build Command: npm run build**, **Output Directory: dist**, **Node.js: 22.x**. 환경 변수나 API 키는 필요하지 않습니다.
+4. 배포 후 `/`, `/styles.css`, `/app.js`, `/api/pokemon-catalog`가 정상 응답하는지 확인합니다. 이어서 지역 검색·도감·하단 포켓몬 검색을 사용합니다.
+
+Vercel의 홈페이지 `404 NOT_FOUND`는 프론트엔드 출력 경로 또는 프로젝트 설정이 맞지 않을 때 발생할 수 있습니다. 코드 반영 후에도 같은 오류라면 Root Directory, 연결 저장소/Production Branch(`main`), 최신 커밋의 Deployment 상태(`Ready`)를 확인하세요. 이전 배포를 Redeploy하는 경우 이 수정이 포함된 커밋인지 확인해야 합니다.
+
+`npm run build`는 공개할 HTML·CSS·JavaScript 3개만 `dist/`에 복사합니다. `/api/*`는 공통 Vercel 함수로 연결되며 검색 쿼리를 보존합니다. 한국어 포켓몬 목록 JSON은 함수 번들에 포함됩니다. 캐시는 함수 인스턴스별 메모리 캐시라 배포 환경에서 영구 저장되거나 인스턴스 간 공유되지 않습니다.
+
 ## 파일 구성
 
 ```text
@@ -66,6 +79,9 @@ backend/                  # Node.js에서 실행
   catalog/kanto.json       # 1세대 151종 한국어·타입·환경 로컬 데이터
   test/app.test.js         # 규칙 및 HTTP/API 처리 테스트
 package.json              # 실행·테스트 명령 (외부 npm 의존성 없음)
+api/index.js              # Vercel 함수 진입점
+vercel.json               # Vercel 빌드·출력·API 경로 설정
+scripts/build.mjs         # 프론트엔드 정적 배포 파일 생성
 ```
 
 ## 동작 방식

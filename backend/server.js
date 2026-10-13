@@ -23,11 +23,11 @@ async function fetchJson(url, fetcher) {
     throw new ApiError(502, url.hostname === 'pokeapi.co' ? '도감 서비스에 연결하지 못했습니다. 잠시 후 다시 시도해 주세요.' : '외부 지역·날씨 서비스에 연결하지 못했습니다. 잠시 후 다시 시도해 주세요.');
   }
 }
-export function createServer({ fetcher = fetch } = {}) {
+export function createHandler({ fetcher = fetch } = {}) {
   const weatherCache = new Map();
   const getPokedex = createPokedex(url => fetchJson(url, fetcher));
   const json = (res, status, data) => { res.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' }); res.end(JSON.stringify(data)); };
-  return http.createServer(async (req, res) => {
+  return async (req, res) => {
     try {
       const url = new URL(req.url, 'http://localhost');
       if (req.method !== 'GET') { res.setHeader('Allow', 'GET'); return json(res, 405, { error: 'GET 요청만 지원합니다.' }); }
@@ -92,7 +92,10 @@ export function createServer({ fetcher = fetch } = {}) {
       res.writeHead(200, { 'Content-Type': `${asset[1]}; charset=utf-8`, 'X-Content-Type-Options': 'nosniff' });
       res.end(body);
     } catch (error) { json(res, error.status || 500, { error: error.status ? error.message : '서버 오류가 발생했습니다.' }); }
-  });
+  };
+}
+export function createServer(options) {
+  return http.createServer(createHandler(options));
 }
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const port = Number(process.env.PORT || 3000);
