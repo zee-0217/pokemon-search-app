@@ -201,10 +201,13 @@ form.addEventListener('submit', async event => {
 document.querySelectorAll('[data-region]').forEach(button => button.addEventListener('click', () => { if (busy) return; $('region').value = button.dataset.region; $('habitat').value = 'auto'; form.requestSubmit(); }));
 
 function randomizeHero(catalog) {
+  const heroIds = new Set([1, 7, 4, 133, 25]); // 이상해씨, 꼬부기, 파이리, 이브이, 피카츄
+  const heroes = catalog.filter(p => heroIds.has(p.id));
   let previous = 1;
   try { previous = Number(localStorage.getItem('field-map-last-hero')) || 1; } catch { /* Storage may be disabled. */ }
-  const choices = catalog.filter(p => p.id !== previous);
-  const selected = (choices.length ? choices : catalog)[Math.floor(Math.random() * (choices.length || catalog.length))];
+  const choices = heroes.filter(p => p.id !== previous);
+  const pool = choices.length ? choices : heroes;
+  const selected = pool[Math.floor(Math.random() * pool.length)];
   if (!selected) return;
   // Keep the existing thumbnail until its replacement has actually loaded.
   const preview = new Image();
