@@ -134,6 +134,7 @@ function render(data) {
   const { location, weather: w, pokemon } = data;
   $('location-name').textContent = location.name;
   $('location-detail').textContent = [...new Set([location.admin1, location.country].filter(Boolean))].join(' · ') + ` / ${Math.abs(location.latitude).toFixed(3)}° ${location.latitude >= 0 ? 'N' : 'S'}, ${Math.abs(location.longitude).toFixed(3)}° ${location.longitude >= 0 ? 'E' : 'W'}`;
+  if (location.note) $('location-detail').append(text('br', ''), text('span', location.note));
   $('map-title').textContent = `${location.name} / FIELD MAP`;
   const [icon, description] = describeWeather(w.weather_code);
   $('weather').replaceChildren(text('span', icon, 'weather-icon'));

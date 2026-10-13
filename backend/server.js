@@ -6,6 +6,7 @@ import { habitats, recommend, pokemon } from './pokemon.js';
 import { findLandmark } from './locations.js';
 import { createPokedex } from './pokedex.js';
 import { findPokemon, destinationsFor } from './destinations.js';
+import { geocodeLocation } from './geocoding.js';
 
 const frontend = fileURLToPath(new URL('../frontend/', import.meta.url));
 const files = { '/': ['index.html', 'text/html'], '/index.html': ['index.html', 'text/html'], '/styles.css': ['styles.css', 'text/css'], '/app.js': ['app.js', 'text/javascript'] };
@@ -56,11 +57,8 @@ export function createHandler({ fetcher = fetch } = {}) {
         let location = findLandmark(query);
         const known = Boolean(location);
         if (!location) {
-          const geoUrl = new URL('https://geocoding-api.open-meteo.com/v1/search');
-          geoUrl.search = new URLSearchParams({ name: query, count: '5', language: 'ko', format: 'json' });
-          const geo = await fetchJson(geoUrl, fetcher);
-          if (!geo.results?.length) throw new ApiError(404, '지역을 찾지 못했습니다. 도시 이름(예: 서울, 부산, Tokyo) 또는 지원 명소를 입력해 주세요.');
-          location = geo.results[0];
+          location = await geocodeLocation(query, url => fetchJson(url, fetcher));
+          if (!location) throw new ApiError(404, '검색어 전체와 일치하는 지역을 찾지 못했습니다. 도시 이름 또는 도시, 국가 형태로 입력해 주세요. (예: New York, US / 몰디브)');
         }
         if (!Number.isFinite(location.latitude) || !Number.isFinite(location.longitude)) throw new ApiError(502, '지역 좌표를 확인하지 못했습니다.');
         const habitat = requestedHabitat === 'auto' ? (location.habitat || 'city') : requestedHabitat;
@@ -84,7 +82,7 @@ export function createHandler({ fetcher = fetch } = {}) {
           const candidate = recommend(habitat, weatherData.current, { limit: pokemon.length }).find(p => p.id === focusId);
           recommendations.splice(5, 1, candidate);
         }
-        return json(res, 200, { location: { name: location.name, latitude: location.latitude, longitude: location.longitude, admin1: location.admin1, country: location.country }, habitat, habitatName: habitats[habitat], habitatSource: requestedHabitat !== 'auto' ? '직접 선택한 환경' : known ? '명소에 미리 지정한 환경' : '일반 지역 기본값 · 도심 (환경을 직접 바꿀 수 있어요)', weather: weatherData.current, timezone: weatherData.timezone, fetchedAt: new Date(weatherData.fetchedAt).toISOString(), pokemon: recommendations });
+        return json(res, 200, { location: { name: location.name, latitude: location.latitude, longitude: location.longitude, admin1: location.admin1, country: location.country, note: location.note }, habitat, habitatName: habitats[habitat], habitatSource: requestedHabitat !== 'auto' ? '직접 선택한 환경' : known ? '명소에 미리 지정한 환경' : location.habitat ? '지역에 지정한 서식 환경' : '일반 지역 기본값 · 도심 (환경을 직접 바꿀 수 있어요)', weather: weatherData.current, timezone: weatherData.timezone, fetchedAt: new Date(weatherData.fetchedAt).toISOString(), pokemon: recommendations });
       }
       const asset = files[url.pathname];
       if (!asset) return json(res, 404, { error: '페이지를 찾지 못했습니다.' });
