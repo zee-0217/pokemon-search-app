@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#234d3d">
+  <title>Pokémon Field Map — 우리 동네 포켓몬 탐험</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="/styles.css">
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/"><span class="pokeball" aria-hidden="true"></span>POKÉMON <span class="brand-light">FIELD MAP</span></a><span class="header-note">작은 모험은 가까운 곳에서.</span><span class="edition">FIELD NOTES / 001</span></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">EXPLORE YOUR NEIGHBORHOOD</p><h1>오늘, 어디서<br><span>어떤 포켓몬을 만날까?</span></h1><p class="intro-copy">숲의 작은 발자국부터 바닷가의 물보라까지.<br>지금의 날씨와 서식 환경으로 우리 동네 포켓몬을 찾아보세요.</p></div><div class="hero-art" aria-hidden="true"><span class="orbit"></span><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt=""><span class="art-label">#001 · 숲속의 작은 친구</span></div></section>
+    <form id="search-form" class="search-panel"><div class="input-group"><label for="region">탐험할 지역 / 명소</label><div class="input-wrap"><span aria-hidden="true">⌖</span><input id="region" name="region" placeholder="예: 서울숲, 해운대, Tokyo" value="서울숲" required minlength="2" maxlength="100" autocomplete="off"></div></div><div class="habitat-group"><label for="habitat">서식 환경</label><select id="habitat" name="habitat"><option value="auto">지역에 맞게 자동 선택</option><option value="forest">숲·공원</option><option value="water">강·호수</option><option value="coast">해변</option><option value="mountain">산</option><option value="city">도심</option><option value="grass">초원</option></select></div><button class="gotcha" type="submit"><span class="pokeball small" aria-hidden="true"></span><span id="button-label">Gotcha!</span><span aria-hidden="true">↗</span></button></form>
+    <div class="quick-row"><span>어디로 가볼까요?</span><button type="button" data-region="서울숲">🌿 서울숲</button><button type="button" data-region="여의도 한강공원">💧 한강공원</button><button type="button" data-region="해운대">🌊 해운대</button><button type="button" data-region="한라산">⛰ 한라산</button></div>
+    <p id="status" class="status" role="status" aria-live="polite">지역을 입력하고 Gotcha!를 눌러 탐험을 시작하세요.</p>
+    <section class="explorer" aria-label="탐험 지도와 추천 결과">
+      <div class="map-panel"><div id="map" aria-label="검색 지역 지도"></div><div class="map-heading"><span class="live-dot"></span><span id="map-title">YOUR NEXT ADVENTURE</span></div><div class="map-note">포켓몬 핀은 추천 결과를 표현한 가상 위치입니다.</div></div>
+      <aside class="field-panel"><p class="eyebrow">LOCAL FIELD REPORT</p><h2 id="location-name">탐험을 기다리는 중</h2><p id="location-detail" class="muted">지역을 검색하면 이곳에 환경 정보가 표시돼요.</p><div id="weather" class="weather-box"><span class="weather-icon">☀</span><div><strong>지금의 날씨는?</strong><p>검색한 지역의 현재 날씨를 확인하세요.</p></div></div><div class="field-label">HABITAT / 서식 환경</div><div id="habitat-info" class="habitat-info">아직 선택한 장소가 없어요.</div><div class="field-label">EXPLORER'S NOTE</div><p class="field-note">햇빛이 좋으면 풀 타입이, 비가 오면 물 타입이 더 활발할 수 있어요. 밤이 되면 또 다른 친구가 나타납니다.</p><span class="report-stamp">관찰하고, 발견하고, 기록하기.</span></aside>
+    </section>
+    <section class="encounters"><div class="section-heading"><div><p class="eyebrow">POSSIBLE ENCOUNTERS</p><h2>이곳에서 만날 법한 친구들 <span id="count">—</span></h2></div><span class="recommendation-note">생태 특성을 반영한 가상 추천</span></div><div id="cards" class="cards"><div class="empty-state"><span class="pokeball" aria-hidden="true"></span><p>새로운 장소, 새로운 만남.<br><span>첫 탐험을 시작해 보세요.</span></p></div></div></section>
+    <section class="reverse-search" aria-labelledby="reverse-title">
+      <div class="reverse-heading"><div><p class="eyebrow">FIND YOUR PARTNER</p><h2 id="reverse-title">이 포켓몬, 어디서 만날까?</h2></div><p>좋아하는 포켓몬에게 어울리는 장소를 찾아보세요.</p></div>
+      <form id="pokemon-search-form" class="reverse-form">
+        <label for="pokemon-name">포켓몬 이름</label>
+        <div class="input-wrap"><span aria-hidden="true"></span><input id="pokemon-name" name="pokemon" placeholder="예: 피카츄, 리자몽, 뮤츠" list="pokemon-names" required minlength="1" maxlength="40" autocomplete="off" aria-describedby="reverse-help"></div>
+        <datalist id="pokemon-names"></datalist>
+        <button type="submit" id="pokemon-search-button">너로 정했다!</button>
+      </form>
+      <p id="reverse-help" class="reverse-help">등록된 생태 데이터 기준으로 국내 명소를 추천합니다. 실제 출현 정보는 아닙니다.</p>
+      <p id="reverse-status" class="reverse-status" role="status" aria-live="polite"></p>
+      <div id="reverse-results" class="reverse-results" aria-busy="false"></div>
+    </section>
+  </main>
+  <dialog id="pokedex-dialog" class="pokedex-dialog" aria-labelledby="pokedex-title">
+    <div class="dex-header"><p class="eyebrow">POKÉDEX / 포켓몬 도감</p><button id="pokedex-close" class="dex-close" type="button" aria-label="도감 닫기" autofocus>×</button></div>
+    <h2 id="pokedex-title">포켓몬 도감</h2>
+    <div id="pokedex-body" aria-live="polite"></div>
+  </dialog>
+  <footer><span>POKÉMON FIELD MAP <span class="footer-dot">·</span> 비공식 팬 프로젝트</span><p>날씨: <a href="https://open-meteo.com/" target="_blank" rel="noreferrer">Open-Meteo</a> · 지역: <a href="https://www.geonames.org/" target="_blank" rel="noreferrer">GeoNames</a> · 이미지: <a href="https://github.com/PokeAPI/sprites" target="_blank" rel="noreferrer">PokéAPI Sprites</a><br>포켓몬 권리: Nintendo / Creatures / GAME FREAK. 실제 출현 정보가 아닙니다.</p></footer>
+</body>
+</html>

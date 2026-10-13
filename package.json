@@ -1,0 +1,8 @@
+{
+  "name": "pokemon-field-map",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": { "start": "node --watch backend/server.js", "test": "node --test backend/test/*.test.js" }
+}

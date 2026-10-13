@@ -1,0 +1,2311 @@
+{
+  "source": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/",
+  "notes": "Korean names and types: PokéAPI. Habitat mapping and weather traits: app interpretation.",
+  "pokemon": [
+    {
+      "id": 1,
+      "name": "이상해씨",
+      "englishName": "bulbasaur",
+      "types": [
+        "풀",
+        "독"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [
+        "sun"
+      ],
+      "ecology": "씨앗포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 2,
+      "name": "이상해풀",
+      "englishName": "ivysaur",
+      "types": [
+        "풀",
+        "독"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [
+        "sun"
+      ],
+      "ecology": "씨앗포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 3,
+      "name": "이상해꽃",
+      "englishName": "venusaur",
+      "types": [
+        "풀",
+        "독"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [
+        "sun"
+      ],
+      "ecology": "씨앗포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 4,
+      "name": "파이리",
+      "englishName": "charmander",
+      "types": [
+        "불꽃"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [
+        "warm",
+        "sun"
+      ],
+      "ecology": "도롱뇽포켓몬으로, 바위가 많은 산악 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 5,
+      "name": "리자드",
+      "englishName": "charmeleon",
+      "types": [
+        "불꽃"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [
+        "warm",
+        "sun"
+      ],
+      "ecology": "화염포켓몬으로, 바위가 많은 산악 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 6,
+      "name": "리자몽",
+      "englishName": "charizard",
+      "types": [
+        "불꽃",
+        "비행"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [
+        "warm",
+        "sun"
+      ],
+      "ecology": "화염포켓몬으로, 바위가 많은 산악 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 7,
+      "name": "꼬부기",
+      "englishName": "squirtle",
+      "types": [
+        "물"
+      ],
+      "homes": [
+        "water",
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "꼬마거북포켓몬으로, 강과 호수 등 물가에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 8,
+      "name": "어니부기",
+      "englishName": "wartortle",
+      "types": [
+        "물"
+      ],
+      "homes": [
+        "water",
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "거북포켓몬으로, 강과 호수 등 물가에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 9,
+      "name": "거북왕",
+      "englishName": "blastoise",
+      "types": [
+        "물"
+      ],
+      "homes": [
+        "water",
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "껍질포켓몬으로, 강과 호수 등 물가에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 10,
+      "name": "캐터피",
+      "englishName": "caterpie",
+      "types": [
+        "벌레"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [
+        "warm"
+      ],
+      "ecology": "애벌레포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 11,
+      "name": "단데기",
+      "englishName": "metapod",
+      "types": [
+        "벌레"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [
+        "warm"
+      ],
+      "ecology": "번데기포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 12,
+      "name": "버터플",
+      "englishName": "butterfree",
+      "types": [
+        "벌레",
+        "비행"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [
+        "warm"
+      ],
+      "ecology": "나비포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 13,
+      "name": "뿔충이",
+      "englishName": "weedle",
+      "types": [
+        "벌레",
+        "독"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [
+        "warm"
+      ],
+      "ecology": "송충이포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 14,
+      "name": "딱충이",
+      "englishName": "kakuna",
+      "types": [
+        "벌레",
+        "독"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [
+        "warm"
+      ],
+      "ecology": "번데기포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 15,
+      "name": "독침붕",
+      "englishName": "beedrill",
+      "types": [
+        "벌레",
+        "독"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [
+        "warm"
+      ],
+      "ecology": "독벌포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 16,
+      "name": "구구",
+      "englishName": "pidgey",
+      "types": [
+        "노말",
+        "비행"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [],
+      "ecology": "아기새포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 17,
+      "name": "피죤",
+      "englishName": "pidgeotto",
+      "types": [
+        "노말",
+        "비행"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [],
+      "ecology": "새포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 18,
+      "name": "피죤투",
+      "englishName": "pidgeot",
+      "types": [
+        "노말",
+        "비행"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [],
+      "ecology": "새포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 19,
+      "name": "꼬렛",
+      "englishName": "rattata",
+      "types": [
+        "노말"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [],
+      "ecology": "쥐포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 20,
+      "name": "레트라",
+      "englishName": "raticate",
+      "types": [
+        "노말"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [],
+      "ecology": "쥐포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 21,
+      "name": "깨비참",
+      "englishName": "spearow",
+      "types": [
+        "노말",
+        "비행"
+      ],
+      "homes": [
+        "mountain",
+        "grass"
+      ],
+      "traits": [],
+      "ecology": "아기새포켓몬으로, 건조하고 바위가 많은 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 22,
+      "name": "깨비드릴조",
+      "englishName": "fearow",
+      "types": [
+        "노말",
+        "비행"
+      ],
+      "homes": [
+        "mountain",
+        "grass"
+      ],
+      "traits": [],
+      "ecology": "부리포켓몬으로, 건조하고 바위가 많은 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 23,
+      "name": "아보",
+      "englishName": "ekans",
+      "types": [
+        "독"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [],
+      "ecology": "뱀포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 24,
+      "name": "아보크",
+      "englishName": "arbok",
+      "types": [
+        "독"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [],
+      "ecology": "코브라포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 25,
+      "name": "피카츄",
+      "englishName": "pikachu",
+      "types": [
+        "전기"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [
+        "storm"
+      ],
+      "ecology": "쥐포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 26,
+      "name": "라이츄",
+      "englishName": "raichu",
+      "types": [
+        "전기"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [
+        "storm"
+      ],
+      "ecology": "쥐포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 27,
+      "name": "모래두지",
+      "englishName": "sandshrew",
+      "types": [
+        "땅"
+      ],
+      "homes": [
+        "mountain",
+        "grass"
+      ],
+      "traits": [],
+      "ecology": "쥐포켓몬으로, 건조하고 바위가 많은 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 28,
+      "name": "고지",
+      "englishName": "sandslash",
+      "types": [
+        "땅"
+      ],
+      "homes": [
+        "mountain",
+        "grass"
+      ],
+      "traits": [],
+      "ecology": "쥐포켓몬으로, 건조하고 바위가 많은 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 29,
+      "name": "니드런♀",
+      "englishName": "nidoran-f",
+      "types": [
+        "독"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [],
+      "ecology": "독침포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 30,
+      "name": "니드리나",
+      "englishName": "nidorina",
+      "types": [
+        "독"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [],
+      "ecology": "독침포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 31,
+      "name": "니드퀸",
+      "englishName": "nidoqueen",
+      "types": [
+        "독",
+        "땅"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [],
+      "ecology": "드릴포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 32,
+      "name": "니드런♂",
+      "englishName": "nidoran-m",
+      "types": [
+        "독"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [],
+      "ecology": "독침포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 33,
+      "name": "니드리노",
+      "englishName": "nidorino",
+      "types": [
+        "독"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [],
+      "ecology": "독침포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 34,
+      "name": "니드킹",
+      "englishName": "nidoking",
+      "types": [
+        "독",
+        "땅"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [],
+      "ecology": "드릴포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 35,
+      "name": "삐삐",
+      "englishName": "clefairy",
+      "types": [
+        "페어리"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [
+        "night"
+      ],
+      "ecology": "요정포켓몬으로, 바위가 많은 산악 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 36,
+      "name": "픽시",
+      "englishName": "clefable",
+      "types": [
+        "페어리"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [
+        "night"
+      ],
+      "ecology": "요정포켓몬으로, 바위가 많은 산악 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 37,
+      "name": "식스테일",
+      "englishName": "vulpix",
+      "types": [
+        "불꽃"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [
+        "warm",
+        "sun"
+      ],
+      "ecology": "여우포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 38,
+      "name": "나인테일",
+      "englishName": "ninetales",
+      "types": [
+        "불꽃"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [
+        "warm",
+        "sun"
+      ],
+      "ecology": "여우포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 39,
+      "name": "푸린",
+      "englishName": "jigglypuff",
+      "types": [
+        "노말",
+        "페어리"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [
+        "night"
+      ],
+      "ecology": "풍선포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 40,
+      "name": "푸크린",
+      "englishName": "wigglytuff",
+      "types": [
+        "노말",
+        "페어리"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [
+        "night"
+      ],
+      "ecology": "풍선포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 41,
+      "name": "주뱃",
+      "englishName": "zubat",
+      "types": [
+        "독",
+        "비행"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [
+        "night"
+      ],
+      "ecology": "박쥐포켓몬으로, 동굴처럼 어둡고 바위가 많은 곳에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 42,
+      "name": "골뱃",
+      "englishName": "golbat",
+      "types": [
+        "독",
+        "비행"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [
+        "night"
+      ],
+      "ecology": "박쥐포켓몬으로, 동굴처럼 어둡고 바위가 많은 곳에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 43,
+      "name": "뚜벅쵸",
+      "englishName": "oddish",
+      "types": [
+        "풀",
+        "독"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [
+        "sun",
+        "night"
+      ],
+      "ecology": "잡초포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 44,
+      "name": "냄새꼬",
+      "englishName": "gloom",
+      "types": [
+        "풀",
+        "독"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [
+        "sun",
+        "night"
+      ],
+      "ecology": "잡초포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 45,
+      "name": "라플레시아",
+      "englishName": "vileplume",
+      "types": [
+        "풀",
+        "독"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [
+        "sun"
+      ],
+      "ecology": "꽃포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 46,
+      "name": "파라스",
+      "englishName": "paras",
+      "types": [
+        "벌레",
+        "풀"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [
+        "sun",
+        "warm"
+      ],
+      "ecology": "버섯포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 47,
+      "name": "파라섹트",
+      "englishName": "parasect",
+      "types": [
+        "벌레",
+        "풀"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [
+        "sun",
+        "warm"
+      ],
+      "ecology": "버섯포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 48,
+      "name": "콘팡",
+      "englishName": "venonat",
+      "types": [
+        "벌레",
+        "독"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [
+        "warm"
+      ],
+      "ecology": "곤충포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 49,
+      "name": "도나리",
+      "englishName": "venomoth",
+      "types": [
+        "벌레",
+        "독"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [
+        "warm"
+      ],
+      "ecology": "독나방포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 50,
+      "name": "디그다",
+      "englishName": "diglett",
+      "types": [
+        "땅"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [],
+      "ecology": "두더지포켓몬으로, 동굴처럼 어둡고 바위가 많은 곳에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 51,
+      "name": "닥트리오",
+      "englishName": "dugtrio",
+      "types": [
+        "땅"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [],
+      "ecology": "두더지포켓몬으로, 동굴처럼 어둡고 바위가 많은 곳에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 52,
+      "name": "나옹",
+      "englishName": "meowth",
+      "types": [
+        "노말"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [],
+      "ecology": "요괴고양이포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 53,
+      "name": "페르시온",
+      "englishName": "persian",
+      "types": [
+        "노말"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [],
+      "ecology": "샴고양이포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 54,
+      "name": "고라파덕",
+      "englishName": "psyduck",
+      "types": [
+        "물"
+      ],
+      "homes": [
+        "water",
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "오리포켓몬으로, 강과 호수 등 물가에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 55,
+      "name": "골덕",
+      "englishName": "golduck",
+      "types": [
+        "물"
+      ],
+      "homes": [
+        "water",
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "오리포켓몬으로, 강과 호수 등 물가에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 56,
+      "name": "망키",
+      "englishName": "mankey",
+      "types": [
+        "격투"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [],
+      "ecology": "돈숭이포켓몬으로, 바위가 많은 산악 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 57,
+      "name": "성원숭",
+      "englishName": "primeape",
+      "types": [
+        "격투"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [],
+      "ecology": "돈숭이포켓몬으로, 바위가 많은 산악 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 58,
+      "name": "가디",
+      "englishName": "growlithe",
+      "types": [
+        "불꽃"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [
+        "warm",
+        "sun"
+      ],
+      "ecology": "강아지포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 59,
+      "name": "윈디",
+      "englishName": "arcanine",
+      "types": [
+        "불꽃"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [
+        "warm",
+        "sun"
+      ],
+      "ecology": "전설포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 60,
+      "name": "발챙이",
+      "englishName": "poliwag",
+      "types": [
+        "물"
+      ],
+      "homes": [
+        "water",
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "올챙이포켓몬으로, 강과 호수 등 물가에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 61,
+      "name": "슈륙챙이",
+      "englishName": "poliwhirl",
+      "types": [
+        "물"
+      ],
+      "homes": [
+        "water",
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "올챙이포켓몬으로, 강과 호수 등 물가에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 62,
+      "name": "강챙이",
+      "englishName": "poliwrath",
+      "types": [
+        "물",
+        "격투"
+      ],
+      "homes": [
+        "water",
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "올챙이포켓몬으로, 강과 호수 등 물가에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 63,
+      "name": "캐이시",
+      "englishName": "abra",
+      "types": [
+        "에스퍼"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [],
+      "ecology": "초능력포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 64,
+      "name": "윤겔라",
+      "englishName": "kadabra",
+      "types": [
+        "에스퍼"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [],
+      "ecology": "초능력포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 65,
+      "name": "후딘",
+      "englishName": "alakazam",
+      "types": [
+        "에스퍼"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [],
+      "ecology": "초능력포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 66,
+      "name": "알통몬",
+      "englishName": "machop",
+      "types": [
+        "격투"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [],
+      "ecology": "괴력포켓몬으로, 바위가 많은 산악 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 67,
+      "name": "근육몬",
+      "englishName": "machoke",
+      "types": [
+        "격투"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [],
+      "ecology": "괴력포켓몬으로, 바위가 많은 산악 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 68,
+      "name": "괴력몬",
+      "englishName": "machamp",
+      "types": [
+        "격투"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [],
+      "ecology": "괴력포켓몬으로, 바위가 많은 산악 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 69,
+      "name": "모다피",
+      "englishName": "bellsprout",
+      "types": [
+        "풀",
+        "독"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [
+        "sun"
+      ],
+      "ecology": "꽃포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 70,
+      "name": "우츠동",
+      "englishName": "weepinbell",
+      "types": [
+        "풀",
+        "독"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [
+        "sun"
+      ],
+      "ecology": "파리잡이포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 71,
+      "name": "우츠보트",
+      "englishName": "victreebel",
+      "types": [
+        "풀",
+        "독"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [
+        "sun"
+      ],
+      "ecology": "파리잡이포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 72,
+      "name": "왕눈해",
+      "englishName": "tentacool",
+      "types": [
+        "물",
+        "독"
+      ],
+      "homes": [
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "해파리포켓몬으로, 바다와 해안에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 73,
+      "name": "독파리",
+      "englishName": "tentacruel",
+      "types": [
+        "물",
+        "독"
+      ],
+      "homes": [
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "해파리포켓몬으로, 바다와 해안에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 74,
+      "name": "꼬마돌",
+      "englishName": "geodude",
+      "types": [
+        "바위",
+        "땅"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [],
+      "ecology": "암석포켓몬으로, 바위가 많은 산악 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 75,
+      "name": "데구리",
+      "englishName": "graveler",
+      "types": [
+        "바위",
+        "땅"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [],
+      "ecology": "암석포켓몬으로, 바위가 많은 산악 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 76,
+      "name": "딱구리",
+      "englishName": "golem",
+      "types": [
+        "바위",
+        "땅"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [],
+      "ecology": "메가톤포켓몬으로, 바위가 많은 산악 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 77,
+      "name": "포니타",
+      "englishName": "ponyta",
+      "types": [
+        "불꽃"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [
+        "warm",
+        "sun"
+      ],
+      "ecology": "불의말포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 78,
+      "name": "날쌩마",
+      "englishName": "rapidash",
+      "types": [
+        "불꽃"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [
+        "warm",
+        "sun"
+      ],
+      "ecology": "불의말포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 79,
+      "name": "야돈",
+      "englishName": "slowpoke",
+      "types": [
+        "물",
+        "에스퍼"
+      ],
+      "homes": [
+        "water",
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "얼간이포켓몬으로, 강과 호수 등 물가에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 80,
+      "name": "야도란",
+      "englishName": "slowbro",
+      "types": [
+        "물",
+        "에스퍼"
+      ],
+      "homes": [
+        "water",
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "기생포켓몬으로, 강과 호수 등 물가에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 81,
+      "name": "코일",
+      "englishName": "magnemite",
+      "types": [
+        "전기",
+        "강철"
+      ],
+      "homes": [
+        "mountain",
+        "grass"
+      ],
+      "traits": [
+        "storm"
+      ],
+      "ecology": "자석포켓몬으로, 건조하고 바위가 많은 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 82,
+      "name": "레어코일",
+      "englishName": "magneton",
+      "types": [
+        "전기",
+        "강철"
+      ],
+      "homes": [
+        "mountain",
+        "grass"
+      ],
+      "traits": [
+        "storm"
+      ],
+      "ecology": "자석포켓몬으로, 건조하고 바위가 많은 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 83,
+      "name": "파오리",
+      "englishName": "farfetchd",
+      "types": [
+        "노말",
+        "비행"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [],
+      "ecology": "청둥오리포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 84,
+      "name": "두두",
+      "englishName": "doduo",
+      "types": [
+        "노말",
+        "비행"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [],
+      "ecology": "쌍둥이새포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 85,
+      "name": "두트리오",
+      "englishName": "dodrio",
+      "types": [
+        "노말",
+        "비행"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [],
+      "ecology": "세쌍둥이새포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 86,
+      "name": "쥬쥬",
+      "englishName": "seel",
+      "types": [
+        "물"
+      ],
+      "homes": [
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "강치포켓몬으로, 바다와 해안에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 87,
+      "name": "쥬레곤",
+      "englishName": "dewgong",
+      "types": [
+        "물",
+        "얼음"
+      ],
+      "homes": [
+        "coast"
+      ],
+      "traits": [
+        "rain",
+        "cold",
+        "snow"
+      ],
+      "ecology": "강치포켓몬으로, 바다와 해안에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 88,
+      "name": "질퍽이",
+      "englishName": "grimer",
+      "types": [
+        "독"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [],
+      "ecology": "진흙포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 89,
+      "name": "질뻐기",
+      "englishName": "muk",
+      "types": [
+        "독"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [],
+      "ecology": "진흙포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 90,
+      "name": "셀러",
+      "englishName": "shellder",
+      "types": [
+        "물"
+      ],
+      "homes": [
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "두조개포켓몬으로, 바다와 해안에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 91,
+      "name": "파르셀",
+      "englishName": "cloyster",
+      "types": [
+        "물",
+        "얼음"
+      ],
+      "homes": [
+        "coast"
+      ],
+      "traits": [
+        "rain",
+        "cold",
+        "snow"
+      ],
+      "ecology": "두조개포켓몬으로, 바다와 해안에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 92,
+      "name": "고오스",
+      "englishName": "gastly",
+      "types": [
+        "고스트",
+        "독"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [
+        "night",
+        "fog"
+      ],
+      "ecology": "가스포켓몬으로, 동굴처럼 어둡고 바위가 많은 곳에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 93,
+      "name": "고우스트",
+      "englishName": "haunter",
+      "types": [
+        "고스트",
+        "독"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [
+        "night",
+        "fog"
+      ],
+      "ecology": "가스포켓몬으로, 동굴처럼 어둡고 바위가 많은 곳에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 94,
+      "name": "팬텀",
+      "englishName": "gengar",
+      "types": [
+        "고스트",
+        "독"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [
+        "night",
+        "fog"
+      ],
+      "ecology": "그림자포켓몬으로, 동굴처럼 어둡고 바위가 많은 곳에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 95,
+      "name": "롱스톤",
+      "englishName": "onix",
+      "types": [
+        "바위",
+        "땅"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [],
+      "ecology": "돌뱀포켓몬으로, 동굴처럼 어둡고 바위가 많은 곳에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 96,
+      "name": "슬리프",
+      "englishName": "drowzee",
+      "types": [
+        "에스퍼"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [
+        "night"
+      ],
+      "ecology": "최면포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 97,
+      "name": "슬리퍼",
+      "englishName": "hypno",
+      "types": [
+        "에스퍼"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [
+        "night"
+      ],
+      "ecology": "최면포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 98,
+      "name": "크랩",
+      "englishName": "krabby",
+      "types": [
+        "물"
+      ],
+      "homes": [
+        "water",
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "게포켓몬으로, 강과 호수 등 물가에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 99,
+      "name": "킹크랩",
+      "englishName": "kingler",
+      "types": [
+        "물"
+      ],
+      "homes": [
+        "water",
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "집게포켓몬으로, 강과 호수 등 물가에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 100,
+      "name": "찌리리공",
+      "englishName": "voltorb",
+      "types": [
+        "전기"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [
+        "storm"
+      ],
+      "ecology": "볼포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 101,
+      "name": "붐볼",
+      "englishName": "electrode",
+      "types": [
+        "전기"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [
+        "storm"
+      ],
+      "ecology": "볼포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 102,
+      "name": "아라리",
+      "englishName": "exeggcute",
+      "types": [
+        "풀",
+        "에스퍼"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [
+        "sun"
+      ],
+      "ecology": "알포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 103,
+      "name": "나시",
+      "englishName": "exeggutor",
+      "types": [
+        "풀",
+        "에스퍼"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [
+        "sun"
+      ],
+      "ecology": "야자열매포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 104,
+      "name": "탕구리",
+      "englishName": "cubone",
+      "types": [
+        "땅"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [],
+      "ecology": "고독포켓몬으로, 바위가 많은 산악 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 105,
+      "name": "텅구리",
+      "englishName": "marowak",
+      "types": [
+        "땅"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [],
+      "ecology": "뼈다귀포켓몬으로, 바위가 많은 산악 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 106,
+      "name": "시라소몬",
+      "englishName": "hitmonlee",
+      "types": [
+        "격투"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [],
+      "ecology": "킥포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 107,
+      "name": "홍수몬",
+      "englishName": "hitmonchan",
+      "types": [
+        "격투"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [],
+      "ecology": "펀치포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 108,
+      "name": "내루미",
+      "englishName": "lickitung",
+      "types": [
+        "노말"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [],
+      "ecology": "핥기포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 109,
+      "name": "또가스",
+      "englishName": "koffing",
+      "types": [
+        "독"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [],
+      "ecology": "독가스포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 110,
+      "name": "또도가스",
+      "englishName": "weezing",
+      "types": [
+        "독"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [],
+      "ecology": "독가스포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 111,
+      "name": "뿔카노",
+      "englishName": "rhyhorn",
+      "types": [
+        "땅",
+        "바위"
+      ],
+      "homes": [
+        "mountain",
+        "grass"
+      ],
+      "traits": [],
+      "ecology": "뿔포켓몬으로, 건조하고 바위가 많은 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 112,
+      "name": "코뿌리",
+      "englishName": "rhydon",
+      "types": [
+        "땅",
+        "바위"
+      ],
+      "homes": [
+        "mountain",
+        "grass"
+      ],
+      "traits": [],
+      "ecology": "드릴포켓몬으로, 건조하고 바위가 많은 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 113,
+      "name": "럭키",
+      "englishName": "chansey",
+      "types": [
+        "노말"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [],
+      "ecology": "알포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 114,
+      "name": "덩쿠리",
+      "englishName": "tangela",
+      "types": [
+        "풀"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [
+        "sun"
+      ],
+      "ecology": "넝쿨포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 115,
+      "name": "캥카",
+      "englishName": "kangaskhan",
+      "types": [
+        "노말"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [],
+      "ecology": "가족포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 116,
+      "name": "쏘드라",
+      "englishName": "horsea",
+      "types": [
+        "물"
+      ],
+      "homes": [
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "드래곤포켓몬으로, 바다와 해안에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 117,
+      "name": "시드라",
+      "englishName": "seadra",
+      "types": [
+        "물"
+      ],
+      "homes": [
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "드래곤포켓몬으로, 바다와 해안에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 118,
+      "name": "콘치",
+      "englishName": "goldeen",
+      "types": [
+        "물"
+      ],
+      "homes": [
+        "water",
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "금붕어포켓몬으로, 강과 호수 등 물가에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 119,
+      "name": "왕콘치",
+      "englishName": "seaking",
+      "types": [
+        "물"
+      ],
+      "homes": [
+        "water",
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "금붕어포켓몬으로, 강과 호수 등 물가에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 120,
+      "name": "별가사리",
+      "englishName": "staryu",
+      "types": [
+        "물"
+      ],
+      "homes": [
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "별포켓몬으로, 바다와 해안에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 121,
+      "name": "아쿠스타",
+      "englishName": "starmie",
+      "types": [
+        "물",
+        "에스퍼"
+      ],
+      "homes": [
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "수수께끼포켓몬으로, 바다와 해안에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 122,
+      "name": "마임맨",
+      "englishName": "mr-mime",
+      "types": [
+        "에스퍼",
+        "페어리"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [],
+      "ecology": "배리어포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 123,
+      "name": "스라크",
+      "englishName": "scyther",
+      "types": [
+        "벌레",
+        "비행"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [
+        "warm"
+      ],
+      "ecology": "버마재비포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 124,
+      "name": "루주라",
+      "englishName": "jynx",
+      "types": [
+        "얼음",
+        "에스퍼"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [
+        "cold",
+        "snow"
+      ],
+      "ecology": "인간형태포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 125,
+      "name": "에레브",
+      "englishName": "electabuzz",
+      "types": [
+        "전기"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [
+        "storm"
+      ],
+      "ecology": "전기포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 126,
+      "name": "마그마",
+      "englishName": "magmar",
+      "types": [
+        "불꽃"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [
+        "warm",
+        "sun"
+      ],
+      "ecology": "불뿜기포켓몬으로, 바위가 많은 산악 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 127,
+      "name": "쁘사이저",
+      "englishName": "pinsir",
+      "types": [
+        "벌레"
+      ],
+      "homes": [
+        "forest"
+      ],
+      "traits": [
+        "warm"
+      ],
+      "ecology": "뿔집게포켓몬으로, 나무와 풀이 많은 숲에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 128,
+      "name": "켄타로스",
+      "englishName": "tauros",
+      "types": [
+        "노말"
+      ],
+      "homes": [
+        "grass",
+        "forest"
+      ],
+      "traits": [],
+      "ecology": "성난소포켓몬으로, 풀밭과 탁 트인 녹지에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 129,
+      "name": "잉어킹",
+      "englishName": "magikarp",
+      "types": [
+        "물"
+      ],
+      "homes": [
+        "water",
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "물고기포켓몬으로, 강과 호수 등 물가에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 130,
+      "name": "갸라도스",
+      "englishName": "gyarados",
+      "types": [
+        "물",
+        "비행"
+      ],
+      "homes": [
+        "water",
+        "coast"
+      ],
+      "traits": [
+        "rain",
+        "wind"
+      ],
+      "ecology": "흉악포켓몬으로, 강과 호수 등 물가에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 131,
+      "name": "라프라스",
+      "englishName": "lapras",
+      "types": [
+        "물",
+        "얼음"
+      ],
+      "homes": [
+        "coast"
+      ],
+      "traits": [
+        "rain",
+        "cold",
+        "snow"
+      ],
+      "ecology": "탈것포켓몬으로, 바다와 해안에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 132,
+      "name": "메타몽",
+      "englishName": "ditto",
+      "types": [
+        "노말"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [],
+      "ecology": "변신포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 133,
+      "name": "이브이",
+      "englishName": "eevee",
+      "types": [
+        "노말"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [],
+      "ecology": "진화포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 134,
+      "name": "샤미드",
+      "englishName": "vaporeon",
+      "types": [
+        "물"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "거품뿜기포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 135,
+      "name": "쥬피썬더",
+      "englishName": "jolteon",
+      "types": [
+        "전기"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [
+        "storm"
+      ],
+      "ecology": "번개포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 136,
+      "name": "부스터",
+      "englishName": "flareon",
+      "types": [
+        "불꽃"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [
+        "warm",
+        "sun"
+      ],
+      "ecology": "불꽃포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 137,
+      "name": "폴리곤",
+      "englishName": "porygon",
+      "types": [
+        "노말"
+      ],
+      "homes": [
+        "city"
+      ],
+      "traits": [],
+      "ecology": "가상포켓몬으로, 사람이 사는 도시 주변에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 138,
+      "name": "암나이트",
+      "englishName": "omanyte",
+      "types": [
+        "바위",
+        "물"
+      ],
+      "homes": [
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "소용돌이포켓몬으로, 바다와 해안에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 139,
+      "name": "암스타",
+      "englishName": "omastar",
+      "types": [
+        "바위",
+        "물"
+      ],
+      "homes": [
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "소용돌이포켓몬으로, 바다와 해안에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 140,
+      "name": "투구",
+      "englishName": "kabuto",
+      "types": [
+        "바위",
+        "물"
+      ],
+      "homes": [
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "껍질포켓몬으로, 바다와 해안에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 141,
+      "name": "투구푸스",
+      "englishName": "kabutops",
+      "types": [
+        "바위",
+        "물"
+      ],
+      "homes": [
+        "coast"
+      ],
+      "traits": [
+        "rain"
+      ],
+      "ecology": "껍질포켓몬으로, 바다와 해안에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 142,
+      "name": "프테라",
+      "englishName": "aerodactyl",
+      "types": [
+        "바위",
+        "비행"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [],
+      "ecology": "화석포켓몬으로, 바위가 많은 산악 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 143,
+      "name": "잠만보",
+      "englishName": "snorlax",
+      "types": [
+        "노말"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [],
+      "ecology": "졸음포켓몬으로, 바위가 많은 산악 지대에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 144,
+      "name": "프리져",
+      "englishName": "articuno",
+      "types": [
+        "얼음",
+        "비행"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [
+        "cold",
+        "snow"
+      ],
+      "ecology": "냉동포켓몬으로, 사람의 발길이 드문 자연환경에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 145,
+      "name": "썬더",
+      "englishName": "zapdos",
+      "types": [
+        "전기",
+        "비행"
+      ],
+      "homes": [
+        "mountain",
+        "forest"
+      ],
+      "traits": [
+        "storm"
+      ],
+      "ecology": "전기포켓몬으로, 사람의 발길이 드문 자연환경에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 146,
+      "name": "파이어",
+      "englishName": "moltres",
+      "types": [
+        "불꽃",
+        "비행"
+      ],
+      "homes": [
+        "mountain"
+      ],
+      "traits": [
+        "warm",
+        "sun"
+      ],
+      "ecology": "화염포켓몬으로, 사람의 발길이 드문 자연환경에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 147,
+      "name": "미뇽",
+      "englishName": "dratini",
+      "types": [
+        "드래곤"
+      ],
+      "homes": [
+        "water",
+        "coast"
+      ],
+      "traits": [],
+      "ecology": "드래곤포켓몬으로, 강과 호수 등 물가에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 148,
+      "name": "신뇽",
+      "englishName": "dragonair",
+      "types": [
+        "드래곤"
+      ],
+      "homes": [
+        "water",
+        "coast"
+      ],
+      "traits": [],
+      "ecology": "드래곤포켓몬으로, 강과 호수 등 물가에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 149,
+      "name": "망나뇽",
+      "englishName": "dragonite",
+      "types": [
+        "드래곤",
+        "비행"
+      ],
+      "homes": [
+        "water",
+        "coast"
+      ],
+      "traits": [
+        "wind"
+      ],
+      "ecology": "드래곤포켓몬으로, 강과 호수 등 물가에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 150,
+      "name": "뮤츠",
+      "englishName": "mewtwo",
+      "types": [
+        "에스퍼"
+      ],
+      "homes": [
+        "city",
+        "mountain"
+      ],
+      "traits": [],
+      "ecology": "유전포켓몬으로, 사람의 발길이 드문 자연환경에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    },
+    {
+      "id": 151,
+      "name": "뮤",
+      "englishName": "mew",
+      "types": [
+        "에스퍼"
+      ],
+      "homes": [
+        "forest",
+        "mountain"
+      ],
+      "traits": [],
+      "ecology": "신종포켓몬으로, 사람의 발길이 드문 자연환경에 어울려요. 도감의 서식지 분류를 바탕으로 이 앱에서 추천한 환경입니다."
+    }
+  ]
+}

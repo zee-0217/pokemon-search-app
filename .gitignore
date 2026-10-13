@@ -1,0 +1,7 @@
+.env
+data/
+node_modules/
+.npm-cache/
+.vercel/
+.env.*
+!.env.example
