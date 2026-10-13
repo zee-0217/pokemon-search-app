@@ -200,30 +200,41 @@ form.addEventListener('submit', async event => {
 });
 document.querySelectorAll('[data-region]').forEach(button => button.addEventListener('click', () => { if (busy) return; $('region').value = button.dataset.region; $('habitat').value = 'auto'; form.requestSubmit(); }));
 
-function randomizeHero(catalog) {
-  const heroIds = new Set([1, 7, 4, 133, 25]); // 이상해씨, 꼬부기, 파이리, 이브이, 피카츄
-  const heroes = catalog.filter(p => heroIds.has(p.id));
-  let previous = 1;
-  try { previous = Number(localStorage.getItem('field-map-last-hero')) || 1; } catch { /* Storage may be disabled. */ }
+function randomizeHero() {
+  const heroes = [{ id: 1, name: '이상해씨' }, { id: 7, name: '꼬부기' }, { id: 4, name: '파이리' }, { id: 133, name: '이브이' }, { id: 25, name: '피카츄' }];
+  const image = document.querySelector('.hero-art img');
+  const label = document.querySelector('.hero-art .art-label');
+  const storageKey = 'field-map-last-hero';
+  let previous = Number(image.dataset.pokemonId) || 0;
+  if (!previous) {
+    try { previous = Number(localStorage.getItem(storageKey)) || 0; } catch { /* Try session storage below. */ }
+    if (!previous) try { previous = Number(sessionStorage.getItem(storageKey)) || 0; } catch { /* Storage may be disabled. */ }
+  }
   const choices = heroes.filter(p => p.id !== previous);
-  const pool = choices.length ? choices : heroes;
-  const selected = pool[Math.floor(Math.random() * pool.length)];
-  if (!selected) return;
-  // Keep the existing thumbnail until its replacement has actually loaded.
-  const preview = new Image();
-  preview.onload = () => {
-    document.querySelector('.hero-art img').src = preview.src;
-    document.querySelector('.hero-art .art-label').textContent = `#${String(selected.id).padStart(3, '0')} · ${selected.name}`;
-    try { localStorage.setItem('field-map-last-hero', String(selected.id)); } catch { /* Random selection still works. */ }
-  };
-  preview.src = artwork(selected.id);
+  image.removeAttribute('data-ready');
+  label.textContent = '오늘의 친구를 만나고 있어요…';
+  function loadNext() {
+    if (!choices.length) { label.textContent = '그림을 불러오지 못했어요. 새로고침해 주세요.'; return; }
+    const [selected] = choices.splice(Math.floor(Math.random() * choices.length), 1);
+    const preview = new Image();
+    preview.onload = () => {
+      image.src = preview.src;
+      image.dataset.pokemonId = String(selected.id);
+      image.dataset.ready = 'true';
+      label.textContent = `#${String(selected.id).padStart(3, '0')} · ${selected.name}`;
+      try { localStorage.setItem(storageKey, String(selected.id)); } catch { /* Session storage is a fallback. */ }
+      try { sessionStorage.setItem(storageKey, String(selected.id)); } catch { /* Storage may be disabled. */ }
+    };
+    preview.onerror = loadNext;
+    preview.src = artwork(selected.id);
+  }
+  loadNext();
 }
 async function loadPokemonNames() {
   try {
     const response = await fetch('/api/pokemon-catalog');
     if (!response.ok) return;
     const catalog = await apiData(response);
-    randomizeHero(catalog);
     catalog.forEach(p => { const option = document.createElement('option'); option.value = p.name; $('pokemon-names').append(option); });
     $('reverse-help').textContent = `현재 ${catalog.length}종의 생태 데이터로 국내 명소를 추천합니다. 이름 목록에서 선택할 수 있어요. 실제 출현 정보는 아닙니다.`;
   } catch { /* The form can still search without autocomplete. */ }
@@ -270,4 +281,6 @@ $('pokemon-search-form').addEventListener('submit', async event => {
     reverseBusy = false; $('pokemon-search-button').disabled = false; $('pokemon-search-button').textContent = '너로 정했다!'; $('reverse-results').setAttribute('aria-busy', 'false');
   }
 });
+randomizeHero();
+window.addEventListener('pageshow', event => { if (event.persisted) randomizeHero(); });
 loadPokemonNames();
