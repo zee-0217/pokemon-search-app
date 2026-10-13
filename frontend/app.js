@@ -200,11 +200,27 @@ form.addEventListener('submit', async event => {
 });
 document.querySelectorAll('[data-region]').forEach(button => button.addEventListener('click', () => { if (busy) return; $('region').value = button.dataset.region; $('habitat').value = 'auto'; form.requestSubmit(); }));
 
+function randomizeHero(catalog) {
+  let previous = 1;
+  try { previous = Number(localStorage.getItem('field-map-last-hero')) || 1; } catch { /* Storage may be disabled. */ }
+  const choices = catalog.filter(p => p.id !== previous);
+  const selected = (choices.length ? choices : catalog)[Math.floor(Math.random() * (choices.length || catalog.length))];
+  if (!selected) return;
+  // Keep the existing thumbnail until its replacement has actually loaded.
+  const preview = new Image();
+  preview.onload = () => {
+    document.querySelector('.hero-art img').src = preview.src;
+    document.querySelector('.hero-art .art-label').textContent = `#${String(selected.id).padStart(3, '0')} · ${selected.name}`;
+    try { localStorage.setItem('field-map-last-hero', String(selected.id)); } catch { /* Random selection still works. */ }
+  };
+  preview.src = artwork(selected.id);
+}
 async function loadPokemonNames() {
   try {
     const response = await fetch('/api/pokemon-catalog');
     if (!response.ok) return;
     const catalog = await apiData(response);
+    randomizeHero(catalog);
     catalog.forEach(p => { const option = document.createElement('option'); option.value = p.name; $('pokemon-names').append(option); });
     $('reverse-help').textContent = `현재 ${catalog.length}종의 생태 데이터로 국내 명소를 추천합니다. 이름 목록에서 선택할 수 있어요. 실제 출현 정보는 아닙니다.`;
   } catch { /* The form can still search without autocomplete. */ }
